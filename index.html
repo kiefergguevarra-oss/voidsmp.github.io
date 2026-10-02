@@ -3,63 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Secure Shop</title>
+    <title>VoidSMP • Shop</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; background-color: #f9f9f9; }
-        .product-card {
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 8px;
-            max-width: 320px;
-            margin: 30px auto;
-            background: white;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        .price { font-size: 22px; color: #0076d6; font-weight: bold; margin: 10px 0; }
-        .gcash-section {
-            margin-top: 20px;
-            padding-top: 15px;
-            border-top: 1px dashed #ccc;
-        }
-        .qr-code { width: 160px; height: auto; margin: 10px 0; }
-        .form-btn {
-            display: inline-block;
-            background-color: #0076d6;
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 15px;
-        }
-        .form-btn:hover { background-color: #00569d; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, sans-serif; }
+        body { background: #0b0b0e; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+        h1 { font-size: 2.5rem; font-weight: 800; background: linear-gradient(45deg, #ff007f, #7f00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
+        p { color: #a0a0ab; font-size: 1rem; margin-bottom: 30px; }
+        .shop-card { background: #16161e; border: 2px solid #27273a; border-radius: 20px; padding: 30px; width: 100%; max-width: 350px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.5); transition: 0.3s; }
+        .shop-card:hover { border-color: #7f00ff; transform: translateY(-5px); }
+        h3 { font-size: 1.6rem; color: #fff; margin-bottom: 8px; }
+        .price { font-size: 2rem; color: #00ffaa; font-weight: 800; margin: 15px 0; text-shadow: 0 0 10px rgba(0,255,170,0.2); }
+        .gcash-zone { margin-top: 25px; background: #1f1f2e; padding: 20px; border-radius: 15px; border: 1px dashed #444; }
+        .gcash-zone h4 { color: #0076d6; font-size: 1.1rem; margin-bottom: 10px; text-transform: uppercase; }
+        .qr-code { width: 100%; max-width: 200px; height: auto; border-radius: 12px; margin: 10px 0; border: 3px solid #0076d6; }
+        .alert-text { color: #ff4a4a; font-size: 0.85rem; font-weight: 600; margin-top: 10px; display: block; }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to VoidShop</h1>
-    <p>Safe and secure checkout via GCash</p>
+    <h1>VoidSMP Shop</h1>
+    <p>Get your ranks and perks instantly</p>
 
-    <div class="product-card">
-        <h3>test</h3>
-        <p>Description of the item you are selling.</p>
-        <div class="price">₱500.00</div>
+    <div class="shop-card">
+        <h3>VIP Server Rank</h3>
+        <p>Flex on the whole lobby with custom roles, kits, and chat perks.</p>
+        <div class="price">₱150.00</div>
         
-        <div class="gcash-section">
-            <h4>Scan to Pay</h4>
-            <p style="font-size: 13px; color: #666;">Scan using the GCash App to pay securely.</p>
-            
-            <!-- Displays your uploaded QR code securely -->
-            <img src="GCash-MyQR-03102026061824.PNG.jpg" alt="GCash QR Code" class="qr-code">
-          
-            
-            <!-- Replace URL below with your Google Form or Facebook Messenger Link -->
-            <a href="YOUR_ORDER_FORM_OR_MESSENGER_LINK" class="form-btn" target="_blank">
-                Submit Receipt & Order
-            </a>
+        <div class="gcash-zone">
+            <h4>Scan to Pay (Private)</h4>
+            <!-- Connects to your exact image name -->
+            <img src="GCash-MyQR-03102026061824.PNG.jpg" alt="GCash QR" class="qr-code">
+            <span class="alert-text">⚠️ Screenshot the receipt or it didn't happen!</span>
         </div>
     </div>
 
 </body>
-  </html>
-  
+</html>
