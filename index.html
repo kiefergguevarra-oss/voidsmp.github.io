@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Secure Shop</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; background-color: #f9f9f9; }
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 320px;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .price { font-size: 22px; color: #0076d6; font-weight: bold; margin: 10px 0; }
+        .gcash-section {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px dashed #ccc;
+        }
+        .qr-code { width: 160px; height: auto; margin: 10px 0; }
+        .form-btn {
+            display: inline-block;
+            background-color: #0076d6;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .form-btn:hover { background-color: #00569d; }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to VoidShop</h1>
+    <p>Safe and secure checkout via GCash</p>
+
+    <div class="product-card">
+        <h3>test</h3>
+        <p>Description of the item you are selling.</p>
+        <div class="price">₱500.00</div>
+        
+        <div class="gcash-section">
+            <h4>Scan to Pay</h4>
+            <p style="font-size: 13px; color: #666;">Scan using the GCash App to pay securely.</p>
+            
+            <!-- Displays your uploaded QR code securely -->
+            <img src="GCash-MyQR-03102026061824.PNG.jpg" alt="GCash QR Code" class="qr-code">
+          
+            
+            <!-- Replace URL below with your Google Form or Facebook Messenger Link -->
+            <a href="YOUR_ORDER_FORM_OR_MESSENGER_LINK" class="form-btn" target="_blank">
+                Submit Receipt & Order
+            </a>
+        </div>
+    </div>
+
+</body>
+  </html>
+  
